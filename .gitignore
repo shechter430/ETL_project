@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 .DS_Store
+api_keys.py
 __pycache__/
 *.py[cod]
 *$py.class
