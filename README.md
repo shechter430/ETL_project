@@ -29,7 +29,7 @@ Create a restaurant_db database in pgAdmin 4 and then create the following two t
 
 * A restaurant_info table that contains the following columns id, Restaurant_name, Website, Phone_number, and Restaurant_type
 
-* A restaurant_location table that contains the follwoing columns id, Address, Lat, and Lng
+* A restaurant_location table that contains the following columns id, Address, Lat, and Lng
 
 
 ### ETL data-flow Model for SA Restaurant data
