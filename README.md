@@ -81,7 +81,7 @@ Using the Yellow Pages and Google GeoCode API identify what metatdata you need t
 
 * Confirm successful LOAD by querying database.
 
-## Here is an example of what your tables should look like. 
+## Here is an example of what your tables should look like:
 
 
 
