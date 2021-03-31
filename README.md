@@ -42,15 +42,17 @@ Create a restaurant_db database in pgAdmin 4 and then create the following two t
 
 ## Extraction:
 
-* Put each CSV into a pandas DataFrame
+Using the Yellow Pages and Google GeoCode API identify what metatdata you need to extract that will assist in generating your list.
 
-Using the Yellow Pages and Google GeoCode API identify what metatdata you need to extract that will assist in generating your list. For this project we extracted:
+* Using the Beautiful Soup tool extract this information from the San Antonio Restaurants section of the Yellow Pages website:
 
 ## 1. Yellow Pages:
 * Restaurant Name
 * Phone Number
 * Restaurant Website
 * Restaurant Type (category)
+
+* Using the Google GeoCode API extract the following metadata:
 
 ## 2. Google GeoCode API:
 * Restaurant Address
@@ -66,9 +68,13 @@ Using the Yellow Pages and Google GeoCode API identify what metatdata you need t
 
 * Handle any duplicates.
 
-* (Hint) Before loading your transformed data into database, check to see if DataFrames needs any datatype conversions.
+* (Hint) Before loading your transformed metadata into database, check to see if DataFrames needs any datatype conversions.
 
-## Here is an example of what your DataFrame should look like once it is transformed:
+## Here is an example of what your DataFrames should look like once they are transformed:
+
+![Restaurant Info](./Images/Restaurant_Info_Columns.png)
+
+![Restaurant Location](./Images/Restaurant_Location_Columns.png)
 
 ## Load:
 
@@ -80,13 +86,10 @@ Using the Yellow Pages and Google GeoCode API identify what metatdata you need t
 
 * Confirm successful LOAD by querying database.
 
-## Here is an example of what your tables should look like:
-
-
 
 ## Future Research and Analysis , 
 
-Future Research and Analysis of this data will allow developers to add hours of operations, ratings, and reviews to website to give customers amplifying information when searching for restaurants in San Antonio. 
+Future Research and Analysis of this metadata will allow developers to add hours of operations, ratings, and reviews to website to give customers amplifying information when searching for restaurants in San Antonio. 
 
 
 
@@ -134,6 +137,7 @@ Project Complete
 ## Contributors
 - [Shondeen Hechter](https://github.com/shechter430), [Divya Shetty](https://github.com/divya-gh) and
 [Quatrell Nevels]() 
+
 
 
  
