@@ -17,19 +17,18 @@
 
 Group Members: Quatrell Nevels, Shondeen Hechter, Divya Shetty
 
-### Description: *.*
 
 ## Objective
 
-Using the Yellow Pages website, San Antonio restaurant data will be extracted to provide information on restaurants to include what type of food the serve and contact information. Additionally, google geocode API will be used to obtain location.
+Using the Yellow Pages website, San Antonio restaurant data will be extracted to provide information on restaurants to include what type of food they serve and contact information. Additionally, Google GeoCode API will be used to obtain location.
 
 ## Instructions
 
 Create a restaurant_db database in pgAdmin 4 and then create the following two tables:
 
-	A restaurant_info table that contains the columns id, Restaurant_name, Website, Phone_number, and Restaurant_type
+* A restaurant_info table that contains the following columns id, Restaurant_name, Website, Phone_number, and Restaurant_type
 
-	A restaurant_location table that contains the columns id, Address, Lat, and Lng
+* A restaurant_location table that contains the following columns id, Address, Lat, and Lng
 
 
 ### ETL data-flow Model for SA Restaurant data
@@ -42,49 +41,52 @@ Create a restaurant_db database in pgAdmin 4 and then create the following two t
 
 
 ## Extraction:
-Put each CSV into a pandas DataFrame
 
-Using the Yellow Pages and Google GeoCode API identify what metatdat you need to extract that will assist in generating your list. For this project we extracted:
+* Put each CSV into a pandas DataFrame
 
-1. Yellow Pages:
-Restaurant Name
-Restaurant Phone Number
-Restaurant Website
-Restaurant Type (category)
+Using the Yellow Pages and Google GeoCode API identify what metatdata you need to extract that will assist in generating your list. For this project we extracted:
 
-2. Google GeoCode API:
-Restaurant Address
-Restaurant Latitude
-Restaurant Longitude
+## 1. Yellow Pages:
+* Restaurant Name
+* Phone Number
+* Restaurant Website
+* Restaurant Type (category)
+
+## 2. Google GeoCode API:
+* Restaurant Address
+* Restaurant Latitude
+* Restaurant Longitude
 
 
 ## Transformation:
-Copy only the columns needed into anew DataFrame.
 
-Once you have extracted the metadata you need to build your list, you will need to create DataFrames and then clean your data so there is no missing or inaccurate data. Here is an example of what your DataFrame should look like once it is transformed. 
+* Copy only the columns needed into anew DataFrame.
+ 
+* Rename columns to fit the tables created in the databases.
 
-Rename columns to fit the tables created in the databases.
+* Handle any duplicates.
 
-Handle any duplicates.
+* (Hint) Before loading your transformed data into database, check to see if DataFrames needs any datatype conversions.
 
-(Hint) Before loading your transformed data into database, check to see if DataFrames needs any datatype conversions.
+## Here is an example of what your DataFrame should look like once it is transformed:
 
 ## Load:
 
-Once you have extracted the metadata, created your DataFrames, and cleaned your metadata you will load information into PostgreSQL. You should have two tables. Here is an example of what your tables should look like. 
+* Create a connection to database
 
-Create a connection to database
+* Check for a successful connection to the database and confirm that the tables have been created.
 
-Check for a successful connection to the database and confirm that the tables have been created.
+* Append DataFrames to tables. Be sure to use the index set earlier.
 
-Append DataFrames to tables. Be sure to use the index set earlier.
+* Confirm successful LOAD by querying database.
 
-Confirm successful LOAD by querying database.
+## Here is an example of what your tables should look like:
 
 
 
-## Future Research and analysis , 
+## Future Research and Analysis , 
 
+Future Research and Analysis of this data will allow developers to add hours of operations, ratings, and reviews to website to give customers amplifying information when searching for restaurants in San Antonio. 
 
 
 
