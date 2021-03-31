@@ -47,13 +47,13 @@ Using the Yellow Pages and Google GeoCode API identify what metatdata you need t
 
 * Using the Beautiful Soup tool extract this information from the San Antonio Restaurants section of the Yellow Pages website:
 
+* Using the Google GeoCode API extract the following metadata:
+
 ## 1. Yellow Pages:
 * Restaurant Name
 * Phone Number
 * Restaurant Website
 * Restaurant Type (category)
-
-* Using the Google GeoCode API extract the following metadata:
 
 ## 2. Google GeoCode API:
 * Restaurant Address
