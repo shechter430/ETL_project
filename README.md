@@ -27,9 +27,9 @@ Using the Yellow Pages website, San Antonio restaurant data will be extracted to
 
 Create a restaurant_db database in pgAdmin 4 and then create the following two tables:
 
-	* A restaurant_info table that contains the following columns id, Restaurant_name, Website, Phone_number, and Restaurant_type
+* A restaurant_info table that contains the following columns id, Restaurant_name, Website, Phone_number, and Restaurant_type
 
-	* A restaurant_location table that contains the follwoing columns id, Address, Lat, and Lng
+* A restaurant_location table that contains the follwoing columns id, Address, Lat, and Lng
 
 
 ### ETL data-flow Model for SA Restaurant data
@@ -49,7 +49,7 @@ Using the Yellow Pages and Google GeoCode API identify what metatdata you need t
 
 ## 1. Yellow Pages:
 * Restaurant Name
-* Restaurant Phone Number
+* Phone Number
 * Restaurant Website
 * Restaurant Type (category)
 
