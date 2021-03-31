@@ -17,11 +17,10 @@
 
 Group Members: Quatrell Nevels, Shondeen Hechter, Divya Shetty
 
-### Description: *.*
 
 ## Objective
 
-Using the Yellow Pages website, San Antonio restaurant data will be extracted to provide information on restaurants to include what type of food the serve and contact information. Additionally, google geocode API will be used to obtain location.
+Using the Yellow Pages website, San Antonio restaurant data will be extracted to provide information on restaurants to include what type of food they serve and contact information. Additionally, Google GeoCode API will be used to obtain location.
 
 ## Instructions
 
